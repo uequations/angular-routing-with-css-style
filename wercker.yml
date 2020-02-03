@@ -40,7 +40,7 @@ build:
     - script:
       name: verify chrome install
       code: |
-        ls -lh /usr/bin
+        which google-chrome-stable
 
     # A step that executes `npm test` command
     - npm-test

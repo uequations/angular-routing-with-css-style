@@ -30,6 +30,7 @@ build:
       name: install chrome headless
       code: |
         apt-get update -y
+        apt-get install apt-transport-https ca-certificates
         wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | apt-key add -
         echo "deb https://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list
         apt-get update -y
